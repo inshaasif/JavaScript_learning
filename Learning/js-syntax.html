@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    The JavaScript syntax defines two types of values:
+
+Fixed values
+Variable values
+
+<!--JavaScript Literals-->
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 10.50;
+</script>
+
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 'John Doe';
+</script>
+
+<!--JavaScript Variables-->
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 6:</p>
+
+<p id="demo"></p>
+
+<script>
+let x;
+x = 6;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<!--JavaScript Operators-->
+
+<h2>JavaScript Operators</h2>
+
+<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = (5 + 6) * 10;
+</script>
+
+<!--JavaScript Expressions-->
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 * 10;
+</script>
+
+<!--JavaScript Keywords-->
+
+<h2>The <b>let</b> Keyword Creates Variables</h2>
+
+<p id="demo"></p>
+
+<script>
+let X , y;
+x = 5 + 6;
+y = x * 10;
+document.getElementById("demo").innerHTML = y;
+</script>
+
+<!--JavaScript Comments-->
+<h2>JavaScript Comments are NOT Executed</h2>
+
+<p id="demo"></p>
+
+<script>
+X = 5;
+// x = 6; I will not be executed
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<!--JavaScript is Case Sensitive-->
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>Try to change lastName to lastname.</p>
+
+<p id="demo"></p>
+
+<script>
+let lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+document.getElementById("demo").innerHTML = lastName;
+</script>
+
+
+</body>
+</html>
