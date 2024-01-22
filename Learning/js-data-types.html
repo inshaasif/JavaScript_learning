@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date-->
+
+<!--The Concept of Data Types
+In programming, data types is an important concept.
+
+To be able to operate on variables, it is important to know something about the type.
+
+Without data types, a computer cannot safely solve this:-->
+<h2>JavaScript</h2>
+
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 16 + "Volvo";
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<h2>JavaScript</h2>
+
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="demo"></p>
+
+<script>
+let X = 16 + 4 + "Volvo";
+document.getElementById("demo").innerHTML = X;
+</script>
+
+<!--JavaScript Types are Dynamic-->
+<h2>JavaScript Data Types</h2>
+
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="demo"></p>
+
+<script>
+let a;         // Now x is undefined
+a = 5;         // Now x is a Number
+a = "John";    // Now x is a String
+
+document.getElementById("demo").innerHTML = a;
+</script>
+
+<!--JavaScript Strings
+A string (or a text string) is a series of characters like "John Doe".-->
+<h2>JavaScript Strings</h2>
+
+<p>Strings are written with quotes. You can use single or double quotes:</p>
+
+<p id="demo"></p>
+
+<script>
+let carName1 = "Volvo XC60";
+let carName2 = 'Volvo XC60';
+
+document.getElementById("demo").innerHTML =
+carName1 + "<br>" + 
+carName2; 
+</script>
+
+
+<!--JavaScript Numbers
+All JavaScript numbers are stored as decimal numbers (floating point).-->
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with, or without decimals:</p>
+
+<p id="demo"></p>
+
+<script>
+let x1 = 34.00;
+let x2 = 34;
+let x3 = 3.14;
+
+document.getElementById("demo").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+</script>
+
+<!--Exponential Notation
+Extra large or extra small numbers can be written with scientific (exponential) notation:-->
+
+<h2>JavaScript Numbers</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+<p id="demo"></p>
+
+<script>
+let y = 123e5;
+let z = 123e-5;
+
+document.getElementById("demo").innerHTML =
+y + "<br>" + z;
+</script>
+
+<!--JavaScript BigInt
+All JavaScript numbers are stored in a a 64-bit floating-point format.-->
+<h1>JavScript Bigint</h1>
+<p>A BigInt can not have decimals.</p>
+
+<p id="demo"></p>
+
+<p>You cannot perform math between a BigInt type and a Number type.</p>
+
+<script>
+let s = BigInt("123456789012345678901234567890");
+document.getElementById("demo").innerHTML = s; 
+</script>
+
+
+<!--JavaScript Booleans
+Booleans can only have two values: true or false.-->
+<h2>JavaScript Booleans</h2>
+
+<p>Booleans can have two values: true or false:</p>
+
+<p id="demo"></p>
+
+<script>
+let e = 5;
+let f = 5;
+let g = 6;
+
+document.getElementById("demo").innerHTML =
+(e == f) + "<br>" + (e == g);
+</script>
+
+<!--JavaScript Arrays
+JavaScript arrays are written with square brackets.
+
+Array items are separated by commas.-->
+<h2>JavaScript Arrays</h2>
+
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("demo").innerHTML = cars[0];
+</script>
+
+<!--JavaScript Objects
+JavaScript objects are written with curly braces {}.-->
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+<!--The typeof Operator
+You can use the JavaScript typeof operator to find the type of a JavaScript variable.-->
+<h1>JavaScript Operators</h1>
+<h2>The typeof Operator</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+typeof "" + "<br>" +
+typeof "John" + "<br>" + 
+typeof "John Doe";
+</script>
+
+<!--Undefined
+In JavaScript, a variable without a value, has the value undefined. The type is also undefined.-->
+<h1>JavaScript Operators</h1>
+<h2>The typeof Operator</h2>
+<p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+<p id="demo"></p>
+
+<script>
+let car;
+document.getElementById("demo").innerHTML =
+car + "<br>" + typeof car;
+</script>
+
+<!--Empty Values
+An empty value has nothing to do with undefined.-->
+<h2>JavaScript</h2>
+
+<p>An empty string has both a legal value and a type:</p>
+
+<p id="demo"></p>
+
+<script>
+let bus = "";
+document.getElementById("demo").innerHTML =
+"The value is: " +
+bus + "<br>" +
+"The type is: " + typeof bus;
+</script>
+
+</body>
+</html>
