@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Real Life Objects, Properties, and Methods
+In real life, a car is an object.
+
+A car has properties like weight and color, and methods like start and stop:-->
+
+<h2>JavaScript Variables</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create and display a variable:
+let car = "Fiat";
+document.getElementById("demo").innerHTML = car;
+</script>
+
+
+
+<!--Objects are variables too. But objects can contain many values.
+
+This code assigns many values (Fiat, 500, white) to a variable named car:-->
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const bus = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The bus type is " + bus.type;
+</script>
+
+<!--Object Definition
+You define (and create) a JavaScript object with an object literal:-->
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+
+<h2>JavaScript Objects</h2>
+
+<p>There are two different ways to access an object property.</p>
+
+<p>You can use person.property or person["property"].</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const Person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
+</script>
+
+<!--Object Methods
+Objects can also have methods.
+
+Methods are actions that can be performed on objects.
+
+Methods are stored in properties as function definitions.-->
+
+const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+
+</body>
+</html>
