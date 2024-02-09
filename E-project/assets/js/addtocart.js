@@ -44,7 +44,7 @@ let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
 let listCard = document.querySelector('.listCard');
-let body = document.querySelector('.body');
+let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
@@ -116,12 +116,12 @@ function reloadCard() {
 }
 
 
-// function changeQuantity(key, quantity) {
-//     if (quantity == 0) {
-//         delete listCards[key]
-//     } else {
-//         listCards[key].quantity = quantity;
-//         listCards[key].price = quantity * products[key].price;
-//     }
-//     reloadCard();
-// }
+ function changeQuantity(key, quantity) {
+     if (quantity == 0) {
+         delete listCards[key]
+     } else {
+         listCards[key].quantity = quantity;
+         listCards[key].price = quantity * products[key].price;
+     }
+     reloadCard();
+ }

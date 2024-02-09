@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+let text = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h1>JavaScript Strings</h1>
+<p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+<p id="demo"></p>
+
+<script>
+let carName1 = "Volvo XC60"; // Double quotes
+let carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
+</script>
+
+<h1>JavaScript Strings</h1>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demo"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo"></p>
+
+<script>
+let texts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = texts.length;
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = new String("John");  // x is an object
+let y = new String("John");  // y is an object
+document.getElementById("demo").innerHTML = (x===y);
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
+
+<p id="demo"></p>
+
+<script>
+let a = new String("John");  // a is an object
+let b = new String("John");  // b is an object
+document.getElementById("demo").innerHTML = (a==b);
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo"></p>
+
+<script>
+// c is a string
+let c = "John";
+
+// d is an object
+let d = new String("John");
+
+document.getElementById("demo").innerHTML =
+typeof c + "<br>" + typeof d;
+</script>
+
+</body>
+</html>
