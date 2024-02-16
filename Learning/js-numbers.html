@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with or without decimals:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 3.14;
+let y = 3;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+<!--Integer Precision-->
+<h1>JavaScript Numbers</h1>
+<h2>Integer Precision</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<p id="demo"></p>
+
+<script>
+let a = 999999999999999;
+let b = 9999999999999999;
+document.getElementById("demo").innerHTML = a + "<br>" + b;
+</script>
+
+
+<!--Floating Precision
+<h1>JavaScript Numbers</h1>
+<h2>Floating Point Precision</h2>
+
+<p>Floating point arithmetic is not always 100% accurate.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 0.2 + 0.1;
+document.getElementById("demo").innerHTML = "0.2 + 0.1 = " + x;
+</script>
+-->
+
+<!--Adding Numbers and Strings
+<h2>JavaScript Numbers</h2>
+
+<p>If you add two numbers, the result will be a number:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 10;
+let y = 20;
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+-->
+
+<!--Numeric Strings
+<h2>JavaScript Numbers</h2>
+
+<p>JavaScript will try to convert strings to numbers when dividing:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = "100";
+let y = "10";
+let z = x / y;   
+document.getElementById("demo").innerHTML = z;
+</script>-->
+
+<!--NaN - Not a Number
+
+<h2>JavaScript Numbers</h2>
+
+<p>A number divided by a numeric string becomes a number:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 100 / "10";
+</script>
+-->
+
+<!--Infinity
+<h2>JavaScript Numbers</h2>
+
+<p>Division by zero generates Infinity;</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 2/0;
+let y = -2/0;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>-->
+
+<!--Hexadecimal
+<h2>JavaScript Numbers</h2>
+
+<p>The toString() method can output numbers from base 2 to 36:</p>
+
+<p id="demo"></p>
+
+<script>
+let myNumber = 32;
+document.getElementById("demo").innerHTML =
+"Decimal 32 = " + "<br><br>" + 
+
+"Hexatrigesimal (base 36): " + myNumber.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + myNumber.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + myNumber.toString(16) + "<br>" +
+"Duodecimal (base 12): " + myNumber.toString(12) + "<br>" +
+"Decimal (base 10): " + myNumber.toString(10) + "<br>" +
+"Octal (base 8): " + myNumber.toString(8) + "<br>" +
+"Binary (base 2): " + myNumber.toString(2);
+</script>
+-->
+
+<!--JavaScript Numbers as Objects
+<h2>JavaScript Numbers</h2>
+
+<p id="demo"></p>
+
+<script>
+// x is a number
+let x = 123;
+
+// y is a Number object
+let y = new Number(123);
+
+document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+</script>
+-->
+
+
+</body>
+</html>
