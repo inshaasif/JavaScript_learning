@@ -18,7 +18,7 @@ String includes()
 String startsWith()
 String endsWith()-->
 
-<!--JavaScript String indexOf()-->
+<!--JavaScript String indexOf()
 <h1>JavaScript Strings</h1>
 <h2>The indexOf() Method</h2>
 
@@ -30,8 +30,66 @@ String endsWith()-->
 let text = "Please locate where 'locate' occurs!";
 let index = text.indexOf("locate");
 document.getElementById("demo").innerHTML = index; 
-</script>
+</script>-->
 
+<!--<h1>JavaScript Strings</h1>
+<h2>The indexOf() Method</h2>
+
+<p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+<p id="demo"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("John");
+document.getElementById("demo").innerHTML = index;
+</script>-->
+
+<!--<h1>JavaScript Strings</h1>
+<h2>The lastIndexOf() Method</h2>
+
+<p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("locate", 15);
+document.getElementById("demo").innerHTML = index; 
+</script>
+-->
+
+
+<!--JavaScript String match()
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a search for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain";
+const myArr = text.match("ain");
+document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+</script>-->
+
+
+<!--JavaScript String matchAll()
+<h1>JavaScript Strings</h1>
+<h2>The matchAll() Method</h2>
+
+<p>ES2020 intoduced the string method matchAll().</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll(/Cats/gi);
+
+document.getElementById("demo").innerHTML = Array.from(iterator);
+</script>
+-->
 
 </body>
 </html>
