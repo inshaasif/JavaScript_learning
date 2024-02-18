@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+
+<h1>JavaScript Arrays</h1>
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+
+<script>
+const name = ["Saad", "raheel", "Insha"];
+document.getElementById("demo").innerHTML = [0];
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+
+<script>
+const company = ["microsoft", "google", "facebook"];
+company[0] = "instagram";
+document.getElementById("demo").innerHTML = company;
+</script>
+
+
+<h1>JavaScript Arrays</h1> 
+<h2>The toString() Method</h2>
+
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+
+
+<h1>JavaScript Objects</h1>
+
+<p>JavaScript uses names to access object properties.</p>
+<p id="demo"></p>
+
+<script>
+const person = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo").innerHTML = person.firstName;
+</script>
+
+
+
+<h1>JavaScript Arrays</h1>
+<h2>The length Property</h2>
+
+<p>The length property returns the length of an array:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruit.length;
+document.getElementById("demo").innerHTML = size;
+</script>
+
+
+<h1>JavaScript Arrays</h1>
+<h2>Looping an Array</h2>
+
+<p id="demo"></p>
+
+<script>
+const texts = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = texts.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + texts[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>The push() Method</h2>
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const schools = ["Biss", "Hpgs", "city"];
+document.getElementById("demo").innerHTML = schools;
+
+function myFunction() {
+  schools.push("beconhouse");
+  document.getElementById("demo").innerHTML = schools;
+}
+</script>
+
+
+<h1>JavaScript Arrays</h1>
+
+<p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+
+<p id="demo"></p>
+
+<script>
+const persons = [];
+persons["firstName"] = "John";
+persons["lastName"] = "Doe";
+persons["age"] = 46; 
+document.getElementById("demo").innerHTML =
+persons[0] + " " + persons.length;
+</script>
+
+
+</body>
+</html>
